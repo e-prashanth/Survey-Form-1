@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel='stylesheet' href="styles.css">
+  </head>
+  <body>
+    <header>
+        <h1 id='title'>Surevey Form</h1>
+        <p id='description'>Thanks for taking time to fill this form</p>
+    </header>
+    <form id="survey-form">
+        <div>
+            <label>Name </label>
+            <input type='text' name="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <label>Email </label>
+            <input type='text' name="'email" placeholder="Enter your Email"/>
+        </div>
+        <div>
+            <label>Age (optional) </label>
+            <input type='number' name='age' placeholder="Age"/>
+        </div>
+        <div>
+            <label>Which option best describes your current role?</label>
+            <select>
+                <option  selected disabled>Select Current Role</option>
+                <option>Student</option>
+                <option>Full time Job</option>
+                <option>Full time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div>
+            <label>Would you recommend your carrer to your friend?</label>
+            <div class="radio">
+                <label><input type="radio" name="radio" checked> Definitely</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="radio"> Maybe</label>
+                
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="radio"> Not sure</label>
+                
+            </div>
+        </div>
+        <div>
+            <label>What is your Best in your College?</label>
+            <select>
+                <option  selected disabled>Select a option</option>
+                <option>Sports</option>
+                <option>Faculty</option>
+                <option>Campus</option>
+                <option>Class Rooms</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div>
+            <label>What do u prefer?</label>
+            <div class="checkbox">
+                <label><input type="checkbox">Front-end Projects</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Back-end Projects</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Coding Questions</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Technical Quiz</label>
+            </div>
+        </div>
+    </form>
+  </body>
+</html>
