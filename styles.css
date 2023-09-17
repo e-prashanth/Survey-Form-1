@@ -22,8 +22,7 @@ form{
     font-size: larger;
     max-width: 720px;
 }
-
-input,select{
+input,select,textarea{
     display: block;
     margin-bottom: 5px;
     width: 100%;
@@ -48,4 +47,10 @@ input[type='radio'],input[type="checkbox"]{
 .radio,.checkbox{
     margin: 10px;
     padding: 0;
+}
+
+button{
+    margin-left: 45%;
+    background-color: greenyellow;
+    font-size: larger;
 }

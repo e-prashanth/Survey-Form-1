@@ -3,28 +3,33 @@
   <head>
     <title>Survey Form</title>
     <link rel='stylesheet' href="styles.css">
+    <script>
+        function HandelSubmit(){
+            alert("thanks");
+        }
+    </script>
   </head>
   <body>
     <header>
-        <h1 id='title'>Surevey Form</h1>
+        <h1 id='title'>Basic Form</h1>
         <p id='description'>Thanks for taking time to fill this form</p>
     </header>
-    <form id="survey-form">
+    <form id="survey-form" onsubmit="HandelSubmit()">
         <div>
             <label>Name </label>
-            <input type='text' name="name" placeholder="Enter your name">
+            <input type='text' name="name" placeholder="Enter your name" required> 
         </div>
         <div>
             <label>Email </label>
-            <input type='text' name="'email" placeholder="Enter your Email"/>
+            <input type='text' name="'email" placeholder="Enter your Email" required>
         </div>
         <div>
             <label>Age (optional) </label>
-            <input type='number' name='age' placeholder="Age"/>
+            <input type='number' name='age' placeholder="Age" required/>
         </div>
         <div>
             <label>Which option best describes your current role?</label>
-            <select>
+            <select required>
                 <option  selected disabled>Select Current Role</option>
                 <option>Student</option>
                 <option>Full time Job</option>
@@ -49,7 +54,7 @@
         </div>
         <div>
             <label>What is your Best in your College?</label>
-            <select>
+            <select required>
                 <option  selected disabled>Select a option</option>
                 <option>Sports</option>
                 <option>Faculty</option>
@@ -72,6 +77,13 @@
             <div class="checkbox">
                 <label><input type="checkbox">Technical Quiz</label>
             </div>
+        </div>
+        <div>
+            <label>Share Your single line Philosophy </label>
+            <input placeholder="Enter your single line Philosophy"/>
+        </div>
+        <div class="buttons">
+            <button type="submit">Submit</button>
         </div>
     </form>
   </body>
